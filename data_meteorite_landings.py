@@ -25,7 +25,7 @@ df = pd.read_csv(path)
 # print(df.sample(10))
 
 
-#numero de filas y columnas que tiene la base de datos
+# numero de filas y columnas que tiene la base de datos
 # print(df.shape)
 
 #numero de datos que tiene la bd, filas por columnas
@@ -34,13 +34,13 @@ df = pd.read_csv(path)
 #estadisticas de las variables numericas de la bbd
 pd.options.display.float_format = "{:,.1f}".format
 
-# print(df.describe())
+print(df.describe())
 
 # print(df.describe(include="all"))
 
 
 #informacion de las categorias
-# print(df.info())
+print(df.info())
 
 #tipo de la variable
 # print(df.dtypes)
@@ -61,7 +61,7 @@ pd.options.display.float_format = "{:,.1f}".format
 
 # pd.get_dummies(df["fall"])
 
-df["ones"] = 1
+# df["ones"] = 1
 
 # df[["fell","found"]] = pd.get_dummies(df["fall"])
 
@@ -95,5 +95,5 @@ df["ones"] = 1
 
 #hacer una copia de un DataFrame
 
-df_meteorites = df.copy(deep=True)
-print(df_meteorites)
+# df_meteorites = df.copy(deep=True)
+# print(df_meteorites)
